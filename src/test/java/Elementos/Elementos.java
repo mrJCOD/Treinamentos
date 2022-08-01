@@ -27,6 +27,17 @@ public class Elementos {
 	
 	public By elMsgDeRetorno = By.xpath("//div[@id='report-success']/p");
 	
+	public By elBotaoEditar = By.xpath("(//a[@class='btn btn-default'])[1]");
+	public By elCampoEndereco = By.id("field-addressLine1");
+	public By elCampoEstado = By.id("field-state");
+	public By elBotaoAttUsuario = By.id("form-button-save");
+	public By elMensagemAtt = By.xpath("//div/p");
+	
+	
+	
+	
+	
+	
 	
 
 }

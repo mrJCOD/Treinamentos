@@ -57,5 +57,10 @@ public class Metodos {
 		
 		driver.quit();
 	}
+	
+	public void limpar(By elemento) {
+		
+		driver.findElement(elemento).clear();
+	}
 
 }

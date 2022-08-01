@@ -54,10 +54,24 @@ public class Teste022 extends Metodos{
 		clicar(el.elSave);
 		
 		//validar mensagem de retorno
-		validarTexto(el.elMsgDeRetorno, "Your data has been successfully stored into the database. or");
+		validarTexto(el.elMsgDeRetorno, "Your Amanda has been successfully stored into the database. or");
 		
 		
 	
+	}
+	
+	@Test
+	public void editarUsuario() {
+		
+		
+		clicar(el.elBotaoEditar);
+		limpar(el.elCampoEndereco);
+		type(el.elCampoEndereco, "100, rua Royale");
+		type(el.elCampoEstado, "República tcheca");
+		clicar(el.elBotaoAttUsuario);
+		validarTexto(el.elMensagemAtt, "Your data has been successfully updated. ");
+	
+		
 	}
 
 }
