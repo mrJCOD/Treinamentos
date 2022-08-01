@@ -4,6 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
 
 import Elementos.Elementos;
 import Metodos.Metodos;
@@ -71,6 +72,16 @@ public class Teste022 extends Metodos{
 		clicar(el.elBotaoAttUsuario);
 		validarTexto(el.elMensagemAtt, "Your data has been successfully updated. ");
 	
+		
+	}
+	
+	@Test
+	public void validarSelect() {
+		
+		Select selecao = new Select(driver.findElement(By.name("per_page")));
+		selecao.selectByValue("50");
+		
+		
 		
 	}
 
